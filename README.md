@@ -118,6 +118,36 @@ they're rotated to specific angles.
 camera position, and will break if you change the camera distance, FoV or 
 orientation on any axis other than Y.
 
+## Level editing
+
+Level designs are stored in `./level/*.jsonlevel`. These are json files containing arrays, with each element representing a tile on the level. A basic example is:
+
+```
+{
+    "name": "Test Zone",
+    "mesh": "mesh/lvl0.jsonmesh",
+    "data": [
+        [
+            0,0,5
+        ]
+    ]
+}
+```
+This is used to create the level below:
+
+![Image 4-3-2024 at 10 01 pm](https://github.com/alexandlazaris/WebGL-SonicEngine/assets/17981265/9bb0184a-e88d-4d97-b89a-f2bf45b7f101)
+
+The tiles can be set to the following:
+- 0 = flat ground
+- 1 = angle up
+- 2 = vertical wall
+- 3 = loop end out (confusing I know)
+- 4 = closed box
+- 5 = open tunnel x-axis
+- 6 = stairs rising
+- 7 = box with small opening
+- 8 = open tunnel z-axis
+
 Cool ideas if you have free time
 --------------------------------
 
